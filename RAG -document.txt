@@ -1,0 +1,45 @@
+RAG - PIPELINE:
+1:Indexing pipeline(offline)
+ - Runs when documents are uploaded or updated.
+ - steps:
+	Document loading
+	Text extraction
+	chunking
+	Embedding
+	Vector storage
+2:Query pipeline(online)
+ - Runs whenever a user asks a question
+ - steps:
+	Query embedding
+	Retrieval
+	Reranking
+	Context construction
+	Generation
+	Citation
+
+
+
+TECHNOLOGY USED:
+Layer			Selected technology
+
+Language		Python 3.11+
+Local LLM runtime	Ollama
+Generation model	Qwen 2.5 3B initially
+Embedding model		nomic-embed-text
+PDF parsing		PyMuPDF
+Vector database		Qdrant
+Keyword retrieval	BM25
+Reranking		Sentence Transformers
+Evaluation		RAGAS + custom Python metrics
+API			FastAPI
+Testing			Pytest
+Experiment tracking	MLflow
+
+
+
+
+
+
+
+
+

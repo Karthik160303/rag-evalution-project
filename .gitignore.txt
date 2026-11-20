@@ -1,0 +1,36 @@
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+logs/
+*.log
+
+# Generated vector database
+vectorstore/
+
+# Generated processed data
+data/processed/
+
+# Raw documents (avoid uploading private or large PDFs)
+data/raw/
+
+# OS files
+.DS_Store
+Thumbs.db
