@@ -19,6 +19,22 @@ RAG - PIPELINE:
 
 
 
+Phase 1: PDF Documents
+		Input documents
+
+Phase 2: Document Ingestion
+		Extract, clean and split text into chunks
+
+Phase 3: Embedding Generation
+		Convert each text chunk into a numerical vector
+
+Qdrant Vector Database
+		Store vectors, text and metadata
+
+Semantic Search
+		Find chunks relevant to a user's question
+
+
 TECHNOLOGY USED:
 Layer			Selected technology
 
@@ -36,9 +52,50 @@ Testing			Pytest
 Experiment tracking	MLflow
 
 
+In Phase 2, we built the document ingestion pipeline:
+- PDF loading
+- Text extraction
+- Text cleaning
+- Document chunking
+- Ingestion tests
 
 
+PHASE -3
+Technology stack
+We use the stack established for this project.
 
+Component			Technology			Purpose
+Embedding model		Nomic Embed Text	Generate embeddings
+Model runtime		Ollama				Run models locally
+Vector database		Qdrant				Store and search vectors
+Language			Python				Implementation
+Testing				Pytest				Validate functionality
+
+Implementation in Phase-3:
+
+Step		Implementation					Output
+3.1		Set up Ollama and embedding model	Working embedding runtime
+3.2			Build embedding.py				Text-to-vector conversion
+3.3			Configure Qdrant				Local vector database
+3.4			Build vector indexing			Store document chunks
+3.5			Build vector retrieval			Retrieve similar chunks
+
+
+An embedding model converts each sentence into a vector of numbers.
+It illustrative values, thet are not actual nomic emabeddings.
+
+Sentence 1: Docker is a containerization platform.
+sentence_1 = [0.21, 0.45, 0.89, 0.12]
+
+Sentence 2: Docker helps developers package applications.
+sentence_2 = [0.23, 0.42, 0.85, 0.15]
+
+Sentence 3: The weather is very cold today.
+sentence_3 = [0.91, 0.13, 0.24, 0.76]
+
+Here we are using the embedding model : ollama nomic-embed-text 
+Embedding model is trained to distinguish between text being indexed and text being used to seach.
+We use Python's requests library to communicate with Ollama's loacal HTTP API.
 
 
 

@@ -5,3 +5,5 @@ pytest
 pytest-cov
 ruff
 pymupdf
+requests>=2.31.0
+qdrant-client  
