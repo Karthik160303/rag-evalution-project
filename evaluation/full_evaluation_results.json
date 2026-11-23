@@ -1,0 +1,85 @@
+{
+    "total_questions": 3,
+    "top_k": 5,
+    "average_retrieval_metrics": {
+        "precision_at_k": 0.4666666666666666,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "hit_rate_at_k": 1.0
+    },
+    "average_answer_metrics": {
+        "faithfulness_score": 0.9,
+        "answer_relevancy_score": 0.9
+    },
+    "results": [
+        {
+            "question": "What is Docker?",
+            "expected_answer": "Write the correct answer based on your PDF.",
+            "generated_answer": "According to the provided document context, Docker is a platform for packaging and running applications in containers. (Context 1, Page 2)",
+            "retrieved_chunk_ids": [
+                "docker_manual_001_p002_c001",
+                "docker_manual_001_p002_c002",
+                "docker_manual_001_p001_c001",
+                "docker_manual_001_p003_c001",
+                "docker_manual_001_p004_c001"
+            ],
+            "retrieval_metrics": {
+                "precision_at_k": 0.2,
+                "recall_at_k": 1.0,
+                "mrr": 1.0,
+                "hit_rate_at_k": 1.0
+            },
+            "answer_metrics": {
+                "faithfulness_score": 0.9,
+                "answer_relevancy_score": 0.9,
+                "explanation": "The answer correctly addresses the question and is supported by the context."
+            }
+        },
+        {
+            "question": "How do Docker containers work?",
+            "expected_answer": "Write the correct answer based on your PDF.",
+            "generated_answer": "According to the provided context, Docker containers work by packaging an application and its required files, libraries, and settings into a single container. This allows the application to run consistently across different environments, as the container provides a self-contained environment for the application to run in.\n\nIn simpler terms, think of a container as a meal prepared from a recipe (image). One image can be used to create multiple containers, and each container is a running instance of the application with its required files and settings.\n\nThis concept is explained in Context 1, page 2, under the section \"Important Docker concepts\".",
+            "retrieved_chunk_ids": [
+                "docker_manual_001_p002_c001",
+                "docker_manual_001_p003_c002",
+                "docker_manual_001_p002_c003",
+                "docker_manual_001_p003_c001",
+                "docker_manual_001_p002_c002"
+            ],
+            "retrieval_metrics": {
+                "precision_at_k": 0.6,
+                "recall_at_k": 1.0,
+                "mrr": 1.0,
+                "hit_rate_at_k": 1.0
+            },
+            "answer_metrics": {
+                "faithfulness_score": 0.9,
+                "answer_relevancy_score": 0.9,
+                "explanation": "Correctly addresses the question and is supported by the context."
+            }
+        },
+        {
+            "question": "What does the docker ps command do?",
+            "expected_answer": "Write the correct answer based on your PDF.",
+            "generated_answer": "The docker ps command shows running containers.",
+            "retrieved_chunk_ids": [
+                "docker_manual_001_p003_c002",
+                "docker_manual_001_p002_c003",
+                "docker_manual_001_p003_c001",
+                "docker_manual_001_p004_c003",
+                "docker_manual_001_p002_c002"
+            ],
+            "retrieval_metrics": {
+                "precision_at_k": 0.6,
+                "recall_at_k": 1.0,
+                "mrr": 1.0,
+                "hit_rate_at_k": 1.0
+            },
+            "answer_metrics": {
+                "faithfulness_score": 0.9,
+                "answer_relevancy_score": 0.9,
+                "explanation": "The answer correctly addresses the question and is supported by the context."
+            }
+        }
+    ]
+}

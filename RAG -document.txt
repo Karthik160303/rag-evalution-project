@@ -98,5 +98,53 @@ Embedding model is trained to distinguish between text being indexed and text be
 We use Python's requests library to communicate with Ollama's loacal HTTP API.
 
 
+Vector indexing:
+
+Qdrant stores the vector and its associated metadata as a point.
+			DocumentChunk
+
+			EmbeddingService
+		Converts text into vectors
+
+			QdrantVectorStore
+		Stores vectors and metadata
+
+			Qdrant Collection
+			document_chunks
+
+Our chunk IDs look like doc001_p001_c001. Qdrant point IDs must use supported integer or UUID formats. We use UUID5 to create a deterministic UUID from each chunk ID.
+This means indexing the same chunk again updates its existing point rather than creating a duplicate.
 
 
+
+5.1 — Evaluation dataset
+
+Create questions, expected answers, and relevant chunk IDs.
+
+
+
+5.2 — Retrieval evaluation
+
+Implement Precision@K, Recall@K, MRR and Hit Rate.
+
+
+
+5.3 — Answer evaluation
+
+Evaluate faithfulness and answer relevancy.
+
+
+
+5.4 — Evaluation pipeline
+
+Run the evaluation dataset through your RAG system.
+
+
+
+5.5 — Generate evaluation reports
+
+Store metrics and results in JSON/CSV.
+
+5.6 — Experiment comparison
+
+Compare different models, chunk sizes and retrieval settings.

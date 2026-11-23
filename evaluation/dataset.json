@@ -1,0 +1,31 @@
+
+[
+  {
+    "question": "What is Docker?",
+    "expected_answer": "Write the correct answer based on your PDF.",
+    "document_id": "docker_manual_001",
+    "relevant_chunk_ids": [
+      "docker_manual_001_p002_c001"
+    ]
+  },
+  {
+    "question": "How do Docker containers work?",
+    "expected_answer": "Write the correct answer based on your PDF.",
+    "document_id": "docker_manual_001",
+    "relevant_chunk_ids": [ 
+        "docker_manual_001_p002_c001",
+        "docker_manual_001_p002_c002",
+        "docker_manual_001_p002_c003"
+    ]
+  },
+  {
+    "question": "What does the docker ps command do?",
+    "expected_answer": "Write the correct answer based on your PDF.",
+    "document_id": "docker_manual_001",
+    "relevant_chunk_ids": [
+      "docker_manual_001_p003_c002",
+      "docker_manual_001_p002_c003",
+      "docker_manual_001_p003_c001"
+    ]
+  }
+]

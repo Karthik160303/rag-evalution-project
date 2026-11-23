@@ -12,6 +12,13 @@ venv/
 .env
 .env.*
 
+# Generated Qdrant database
+data/qdrant/
+
+# Raw PDFs
+data/raw/
+
+
 # IDE
 .vscode/
 .idea/

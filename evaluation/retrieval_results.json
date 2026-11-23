@@ -1,0 +1,73 @@
+{
+    "top_k": 5,
+    "total_questions": 3,
+    "average_metrics": {
+        "precision_at_k": 0.4666666666666666,
+        "recall_at_k": 1.0,
+        "mrr": 1.0,
+        "hit_rate_at_k": 1.0
+    },
+    "results": [
+        {
+            "question": "What is Docker?",
+            "retrieved_chunk_ids": [
+                "docker_manual_001_p002_c001",
+                "docker_manual_001_p002_c002",
+                "docker_manual_001_p001_c001",
+                "docker_manual_001_p003_c001",
+                "docker_manual_001_p004_c001"
+            ],
+            "relevant_chunk_ids": [
+                "docker_manual_001_p002_c001"
+            ],
+            "metrics": {
+                "precision_at_k": 0.2,
+                "recall_at_k": 1.0,
+                "mrr": 1.0,
+                "hit_rate_at_k": 1.0
+            }
+        },
+        {
+            "question": "How do Docker containers work?",
+            "retrieved_chunk_ids": [
+                "docker_manual_001_p002_c001",
+                "docker_manual_001_p003_c002",
+                "docker_manual_001_p002_c003",
+                "docker_manual_001_p003_c001",
+                "docker_manual_001_p002_c002"
+            ],
+            "relevant_chunk_ids": [
+                "docker_manual_001_p002_c001",
+                "docker_manual_001_p002_c002",
+                "docker_manual_001_p002_c003"
+            ],
+            "metrics": {
+                "precision_at_k": 0.6,
+                "recall_at_k": 1.0,
+                "mrr": 1.0,
+                "hit_rate_at_k": 1.0
+            }
+        },
+        {
+            "question": "What does the docker ps command do?",
+            "retrieved_chunk_ids": [
+                "docker_manual_001_p003_c002",
+                "docker_manual_001_p002_c003",
+                "docker_manual_001_p003_c001",
+                "docker_manual_001_p004_c003",
+                "docker_manual_001_p002_c002"
+            ],
+            "relevant_chunk_ids": [
+                "docker_manual_001_p003_c002",
+                "docker_manual_001_p002_c003",
+                "docker_manual_001_p003_c001"
+            ],
+            "metrics": {
+                "precision_at_k": 0.6,
+                "recall_at_k": 1.0,
+                "mrr": 1.0,
+                "hit_rate_at_k": 1.0
+            }
+        }
+    ]
+}
